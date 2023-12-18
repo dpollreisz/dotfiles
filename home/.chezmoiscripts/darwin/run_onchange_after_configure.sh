@@ -66,7 +66,7 @@ defaults write com.apple.dock autohide -bool true
 defaults write com.apple.dock launchanim -bool false
 
 # Position Dock on the right
-defaults write com.apple.dock orientation right
+defaults write com.apple.dock orientation bottom
 
 # Hide Recent Applications in dock
 defaults write com.apple.dock show-recents -bool false

@@ -116,16 +116,11 @@ monitor_count=$(yabai -m query --displays | jq '. | length')
 
 case $monitor_count in
   1)
-    setup_display -d 1 Terminal Slack Search Work Present Music Vault Scratch Mail Meet
+    setup_display -d 1 Mail Slack Meet Work Terminal Present Scratch Music Vault Personal 
   ;;
   2)
-    setup_display -d 1 Terminal Search Present Scratch Meet
-    setup_display -d 2 Slack Work Music Vault Mail
-  ;;
-  3)
-    setup_display -d 1 Terminal Slack Search Work Present Mail 
-    setup_display -d 2 Meet Scratch
-    setup_display -d 3 Music Vault
+    setup_display -d 1 Mail Meet Work Terminal Present Scratch Personal
+    setup_display -d 2 Slack Music Vault
 esac
 
 
@@ -135,8 +130,9 @@ done
 # ============================= Rules =============================== 
 yabai -m rule --add label="Slack" app="Slack"  space=Slack
 
-yabai -m rule --add label="Chrome-Work" app="Google Chrome" title="\(Work\)$" space=Search
-yabai -m rule --add label="Chrome-Personal" app="Google Chrome" title="\(Personal\)$" space=Search
+yabai -m rule --add label="Chrome-Work" app="Google Chrome" title="\(Work\)$" space=Work
+yabai -m rule --add label="Chrome-Personal" app="Google Chrome" title="\(Personal\)$" space=Personal
+yabai -m rule --add label="Messages" app="Messages" space=Personal
 
 yabai -m rule --add label="Ramp" app="Ramp" space=Work
 yabai -m rule --add label="Google-Drive" app="Google Drive$" space=Work

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-SPACE_ICONS=(":terminal:" ":desktop:" ":google_chrome:" ":slack:" ":calendar:" "󰊶 " ":camera:" "󰎚 " ":spotify:" ":bit_warden:")
+SPACE_ICONS=(":mail:" ":camera:" ":google_chrome:" ":terminal:" "󰊶 " "󰎚 " "􀌥 " ":slack:" ":spotify:" ":bit_warden:")
 
 # Destroy space on right click, focus space on left click.
 # New space by left clicking separator (>)
