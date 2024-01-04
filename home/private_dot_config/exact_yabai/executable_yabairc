@@ -143,7 +143,7 @@ yabai -m rule --add label="Calandar" app="Google Calendar" space=Mail
 yabai -m rule --add label="Gmail" app="Gmail" space=Mail
 
 yabai -m rule --add label="Meet" app="Google Meet" space=Meet
-yabai -m rule --add label="Gather-Desktop" app="^Gather$" title="Desktop$" space=Meet
+yabai -m rule --add label="Gather-Desktop" app="^Gather$" title="Desktop$" space=Scratch
 yabai -m rule --add label="Gather-Mini" app="^Gather$" title="Mini Mode$" manage=off
 
 yabai -m rule --add label="Spotify" app="^Spotify$" space=Music
