@@ -21,8 +21,8 @@
 ;
 ; At the end: Include Co-authored-by for all contributors.
 ; Include at least one empty line before it. Format:
-{{- range .work.authors }}
- ; Co-authored-by: {{ .name }}<{{ .email }}>
+{{- range .git.work.teamMembers }}
+; Co-authored-by: {{ .name }} <{{ .email }}>
 {{- end }}
 ;
 ; How to Write a Git Commit Message:
