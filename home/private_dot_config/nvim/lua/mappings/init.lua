@@ -1,1 +1,1 @@
-require("mappings.core")
+return {}
